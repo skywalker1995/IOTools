@@ -21,6 +21,7 @@ public class IOExerciseOne {
         File ioTest = new File(System.getProperty("user.dir") + "/IOTest");
         ioTest.mkdir();
         hw.renameTo(new File(ioTest.getAbsolutePath() + File.separator + hw.getName()));
+
         for (String fileName : ioTest.list()) {
             System.out.println("File Name: " + fileName);
         }
